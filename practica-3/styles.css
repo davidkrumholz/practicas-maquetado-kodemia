@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: #e0e8ff;
+--Bright-blue: #3829e0;
+
+--Very-pale-blue: #f5f7ff;
+--Desaturated-blue: #7280a7;
+--Dark-blue: #1f2f56;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: #e0e8ff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.bg__img {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+p {
+    font-size: 16px;
+    color: #7280a7;
+    line-height: 1.6;
+    margin: 0 40px;
+}
+
+.order__container {
+    background-color: #fff;
+    margin: 30px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+}
+
+.order__container > img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.order__container > h1 {
+    color: #1f2f56;
+    margin: 12px 0;
+}
+
+.order__container > .order__image {
+    width: 100%;
+}
+
+.pricing__container {
+    margin: 15px auto;
+    background-color: #f5f7ff;
+    width: 80%;
+    border-radius: 5px;
+    justify-content: space-between;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.pricing__container > .pricing__section > img {
+    margin-right: 20px;
+}
+
+.pricing__container > .pricing__section > .pricing__subsection {
+    display: inline-block;
+}
+
+.pricing__button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pricing__button.pricing__change {
+    background-color: transparent;
+    color: #3829e0;
+    text-decoration: underline;
+}
+
+.pricing__buttons > .buttons__container > .pricing__button {
+    padding: 10px;
+    width: 80%;
+}
+
+.pricing__buttons > .buttons__container > .pricing__button.order_payment {
+    background-color: #3829e0;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.pricing__buttons > .buttons__container > .pricing__button.order_cancel {
+    background-color: transparent;
+    color: #7280a7;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
