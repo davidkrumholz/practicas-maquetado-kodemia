@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.cards__container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cards__container > .card__container {
+    width: 220px;
+    height: 370px;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.cards__container > .card__container.card__container--blue {
+    background-color: #7f7fd5;
+    background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+}
+
+.cards__container > .card__container.card__container--red {
+    background-color: #ff416c;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    height: 400px;
+    margin: 0 20px;
+}
+
+.cards__container > .card__container.card__container--green {
+    background-color: #00b09b;
+    background: linear-gradient(to right, #96c93d, #00b09b);
+}
+
+.card__type {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.card__price {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card__price > .card__dollar {
+    font-size: 27px;
+}
+
+.card__plan {
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.card__plan::before, .card__plan::after {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    content: "";
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.card__details {
+    color: white;
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card__details li {
+    margin-bottom: 5px;
+}
+
+.card__button--container {
+    cursor: pointer;
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    background: white;
+    right: -34%;
+    bottom: 0;
+    transition: all 0.4s ease-in-out;
+    border-top-left-radius: 15px;
+}
+
+.card__button--container > .card__button {
+    text-shadow: 0 0 0;
+    text-decoration: none;
+    position: absolute;
+    left: 8%;
+    top: 25%;
+    color: black;
+    font-size: 1.2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.card__button--container:hover {
+    transform: scale(1.02);
+    width: 100%;
+    right: 0;
+}
