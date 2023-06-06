@@ -21,3 +21,8 @@ https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj
 
 Desarrollar la pagian del siguiente link en html y css:
 https://codemyui.com/css-only-pricing-table-with-gradient-background-and-an-expanding-subscribe-button/
+
+## Practica 5
+
+Desarrollar la pagina del siguiente link en html y css:
+https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0
